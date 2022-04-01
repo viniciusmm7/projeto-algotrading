@@ -14,8 +14,12 @@ Os indicadores que serão utilizados para tal serão:
 ### Bollinger Bands
 Calcula-se um range em torno da média móvel com base em uma quantidade *m* de desvios padrão da média de um período *n*.
 
-$$ Upper band = avg(p, n) + m * std(p, n) $$
-$$ Lower band = avg(p, n) - m * std(p, n) $$
+$$
+  Upper band = avg(p, n) + m * std(p, n)
+$$
+$$
+  Lower band = avg(p, n) - m * std(p, n)
+$$
 
 Pode ser interpretado de diversas maneiras, tais como:
 1. Comprar quando o preço tocar a banda inferior e vender quando tocar a banda superior.
