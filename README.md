@@ -36,7 +36,37 @@ Primeiro calcula-se quatro taxas de variação suavizadas com tendo como base *X
 
 > ROC4 = (Price/Price(X4) - 1) * 100
 
-Então 
+Sendo *X1*, *X2*, *X3* e *X4* iguais à, respectivamente:
+- 10, 15, 20, 30 (dias)
+- 10, 13, 15, 20 (semanas)
+- 9, 12, 18, 24 (meses)
+
+Então suaviza as taxas de variação, respectivamente, seguindo padrões recomendados por Martin J Pring (criador do indicador) com base em médias móveis simples, nomeadas de *AVG1*, *AVG2*, *AVG3* e *AVG4*, com valores:
+- 10, 10, 10, 15 (dias)
+- 10, 13, 15, 20 (semanas)
+- 6, 6, 6, 9 (meses)
+
+Tendo também, como padrão, os pesos *W1*, *W2*, *W3* e *W4*, respectivamente:
+> W1 = 1
+
+> W2 = 2
+
+> W3 = 3
+
+> W4 = 4
+
+Ficando então como fórmula final:
+> KST = MOV(ROC1, AVG1) * W1 + MOV(ROC2, AVG2) * W2 + MOV(ROC3, AVG3) * W3 + MOV(ROC4, AVG4) * W4
+
+Sendo que MOV(ROC, AVG) é a média móvel simples do período *AVG* de taxa de variação *ROC*
+
+Por fim, se compara os cruzamentos com a média móvel simples de 9 dias, semanas ou meses.
+
+A tomada de decisão se baseia em:
+1. Comprar quando KST cruzar vindo por baixo da média móvel de 9 dias, semanas ou meses.
+2. Vender quando KST cruzar vindo por cima da média móvel de 9 dias, semanas ou meses.
+___
+### Zero Lag Exponential Moving Average (ZLMA) 
 ___
 ## Resultado esperado
 Ao mesclar esses indicadores é esperado que 
