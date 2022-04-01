@@ -14,6 +14,7 @@ Os indicadores que serão utilizados para tal serão:
 ### Bollinger Bands
 Calcula-se um range em torno da média móvel com base em uma quantidade *m* de desvios padrão da média de um período *n*.
 > Upper band = avg(p, n) + m * std(p, n)
+
 > Lower band = avg(p, n) - m * std(p, n)
 
 Pode ser interpretado de diversas maneiras, tais como:
@@ -28,8 +29,11 @@ ___
 ### KST Oscillator
 Primeiro calcula-se quatro taxas de variação suavizadas com tendo como base *X1*, *X2*, *X3* e *X4* dias anteriores.
 > ROC1 = (Price/Price(X1) - 1) * 100
+
 > ROC2 = (Price/Price(X2) - 1) * 100
+
 > ROC3 = (Price/Price(X3) - 1) * 100
+
 > ROC4 = (Price/Price(X4) - 1) * 100
 
 Então 
