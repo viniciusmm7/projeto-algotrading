@@ -9,7 +9,7 @@ ___
 Os indicadores que serão utilizados para tal serão:
 - Bollinger Bands https://en.wikipedia.org/wiki/Bollinger_Bands
 - KST Oscillator https://en.wikipedia.org/wiki/KST_oscillator
-- Zero Lag Exponential Moving Average https://en.wikipedia.org/wiki/Zero_lag_exponential_moving_average
+- Parabolic SAR https://en.wikipedia.org/wiki/Parabolic_SAR
 
 ### Bollinger Bands
 Calcula-se um range em torno da média móvel com base em uma quantidade *m* de desvios padrão da média de um período *n*.
@@ -66,7 +66,7 @@ A tomada de decisão se baseia em:
 1. Comprar quando KST cruzar vindo por baixo da média móvel de 9 dias, semanas ou meses.
 2. Vender quando KST cruzar vindo por cima da média móvel de 9 dias, semanas ou meses.
 ___
-### Zero Lag Exponential Moving Average (ZLMA) 
+### Parabolic Stop And Reverse (PSAR)
 ___
 ## Resultado esperado
 Ao mesclar esses indicadores é esperado que 
