@@ -67,6 +67,20 @@ A tomada de decisão se baseia em:
 2. Vender quando KST cruzar vindo por cima da média móvel de 9 dias, semanas ou meses.
 ___
 ### Parabolic Stop And Reverse (PSAR)
+Esse indicador é excelente para ser usado como stop loss ou stop gain, será com essa funcionalidade que ele será usado no projeto.
+
+O cálculo dele é feito da seguinte forma:
+$$ SAR(amanhã) = SAR(hoje) + AF(EP - SAR(hoje)) $$
+
+Sendo AF e EP, respectivamente, Acceleration Factor e Extreme Point, ou seja, fator de aceleração e ponto extremo.
+
+Porém existem dois casos, o PSAR em alta e o PSAR em queda, sendo diferenciado na equação como:
+
+PSAR em alta:
+> SAR(amanhã) = SAR(hoje) + AF(EP - SAR(hoje))
+
+PSAR em queda:
+> SAR(amanhã) = SAR(hoje) - AF(EP - SAR(hoje))
 ___
 ## Resultado esperado
 Ao mesclar esses indicadores é esperado que 
