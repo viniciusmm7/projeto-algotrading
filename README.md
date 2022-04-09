@@ -103,6 +103,6 @@ E também que:
 > signal = 0 , signal = 0
 
 Tendo então como conjunto:
-> S = [-1, 1] | S∈Z
+> S = {[-1, 1] | S∈Z}
 
 O *stop gain* e *stop loss* para o mercado em tendência será o próprio Bollinger Bands com um lag adicional de 4 dias, enquanto para o mercado oscilatório será o PSAR.
