@@ -83,4 +83,26 @@ PSAR em queda:
 > SAR(amanhã) = SAR(hoje) - AF(EP - SAR(hoje))
 ___
 ## Resultado esperado
-Ao mesclar esses indicadores é esperado que 
+Será utilizada a seguinte fórmula para determinar qual caminho seguir:
+> signal = bb + 2*(kst + psar)
+
+Ou seja, se o KST e o PSAR discordarem entre si, o mercado será considerado em tendência e a decisão será do Bollinger Bands.
+
+Já se eles concordarem, o mercado será considerado oscilatório e a decisão será tomada por eles.
+
+Vale ressaltar que as posições que podem ser tomadas são:
+- 1 para entrar comprado
+- -1 para entrar vendido
+- 0 para não ter posição no momento
+
+E também que:
+> signal = 1 , signal > 0
+
+> signal = -1 , signal < 0
+
+> signal = 0 , signal = 0
+
+Tendo então como conjunto:
+> S = [-1, 1] | S∈Z
+
+O *stop gain* e *stop loss* para o mercado em tendência será o próprio Bollinger Bands com um lag adicional de 4 dias, enquanto para o mercado oscilatório será o PSAR.
