@@ -88,7 +88,7 @@ class MarketData():
 
                 date = datetime.strptime(cols[0], '%Y-%m-%d')
                 price = (float(cols[1]), float(cols[2]),
-                         float(cols[3]), float(cols[5]))
+                         float(cols[3]), float(cols[4]))
                 #quantity = int(cols[6])
                 quantity = 0
 
